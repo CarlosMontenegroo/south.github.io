@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  flex-direction: column;  /* Para colocar el texto debajo de la imagen */
+}
+
+.container {
+  position: relative;
+  width: 250px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#text {
+  margin-top: 20px;  /* Separación entre la imagen y el texto */
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  display: none;  /* Empieza oculto */
+}
+
+.hidden {
+  display: none;
+}
+
+#text:not(.hidden) {
+  display: block;
+}
